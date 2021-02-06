@@ -1,13 +1,14 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  <pre>{{ HelloWorldRaw }}</pre>
+  <pre>{{ Raw }}</pre>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
-import HelloWorldRaw from "./components/HelloWorld.vue?raw";
+import Raw from "./components/HelloWorld.vue?raw";
+// import Raw from "./main.ts?raw";
 
 export default defineComponent({
   name: "App",
@@ -15,7 +16,7 @@ export default defineComponent({
     HelloWorld,
   },
   data() {
-    return { HelloWorldRaw };
+    return { Raw };
   },
 });
 </script>
